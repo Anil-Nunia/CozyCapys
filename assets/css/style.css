@@ -112,6 +112,10 @@
 
 .bg_color3s {
     background-color: #93d8fd;
+    background-image: url(../image/Vectorg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .mtop {
@@ -330,12 +334,10 @@
 
 }
 
-.fullline::after {
-    content: '';
-    position: absolute;
+.fullline {
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.30);
-    bottom: 74px;
+    height: 2px;
 }
 
 .rectftr {
@@ -393,6 +395,17 @@
 .topimg1s {
     margin-top: -7px;
 }
+.bgimgg{
+    left: 0;
+    top: 8%;
+    position: absolute;
+}
+.bgrimg{
+    right: 0;
+    top: 10%;
+    position: absolute;
+}
+
 
 /* preloader */
 #preloader-box {
@@ -429,7 +442,13 @@
     .bgimg {
         background-size: cover;
     }
+.bgimgg {
+    display: none;
+}
 
+.bgrimg {
+    display: none;
+}
     .imgls {
         display: none;
     }
@@ -558,6 +577,13 @@
     .imgjs {
         bottom: -30px;
     }
+        .bgimgg {
+            display: block;
+        }
+    
+        .bgrimg {
+            display: block;
+        }
 }
 
 @media (min-width:850px) {
