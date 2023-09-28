@@ -10,7 +10,7 @@
 }
 
 .bg_color1s {
-    background-color: #90D7FC;
+    background-color: #90D7FC !important;
 }
 
 /* #D0EFFF */
@@ -29,6 +29,7 @@
 .navslink:hover::after {
     width: 100%;
 }
+
 .fotrlink::after {
     position: absolute;
     content: '';
@@ -102,6 +103,11 @@
 
 .bg_color2s {
     background-color: #eec4dc;
+    background-image: url(../image/Vectorbgimg1s.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .bg_color3s {
@@ -120,9 +126,12 @@
 }
 
 .imgabout {
-    bottom: -136px;
+    rotate: -5deg;
+    bottom: -124px;
     right: 0;
     z-index: 1;
+    max-width: 268px;
+    width: 100%;
 }
 
 .imgsleep {
@@ -131,7 +140,7 @@
 }
 
 .imgplant {
-    top: 60%;
+    top: 71%;
     z-index: 1;
 }
 
@@ -237,7 +246,7 @@
 }
 
 .whsp {
-    white-space: nowrap;
+    white-space: nowrap !important;
 }
 
 .boxs :hover {
@@ -351,14 +360,40 @@
     right: 0;
     z-index: 11;
 }
-.btn_join:hover{
-  color: #fff;
-  background-color: #9acc44;
+
+.btn_join:hover {
+    color: #fff;
+    background-color: #9acc44;
 }
-.accordion-item{
+
+.accordion-item {
     max-width: 845px !important;
-    
 }
+
+.svgicon:hover svg path {
+    fill: #fff;
+}
+
+.svgicon:hover svg circle {
+    stroke: #fff;
+}
+
+.icons:hover svg path {
+    fill: #ff9300;
+}
+
+.icons:hover svg circle {
+    stroke: #ff9300;
+}
+
+.m_top {
+    margin-top: -2px;
+}
+
+.topimg1s {
+    margin-top: -7px;
+}
+
 /* preloader */
 #preloader-box {
     min-height: 100vh;
@@ -394,9 +429,11 @@
     .bgimg {
         background-size: cover;
     }
-.imgls{
-    display: none;
-}
+
+    .imgls {
+        display: none;
+    }
+
     .img4cartoon {
         max-width: 960px;
         width: 100%;
@@ -417,10 +454,14 @@
 
     .imgplant {
         display: none;
+        max-width: 160px;
+        width: 100%;
+        bottom: 0;
     }
 
     .bg_white {
         background-color: #fff;
+        border-radius: 27px;
     }
 
     .imggggplt {
@@ -447,13 +488,11 @@
     }
 
     .imglp {
-        right: -51px;
+        right: 0;
         max-width: 200px;
         bottom: 14px;
-        display: none;
+
     }
-
-
 
     .img1ct {
         position: absolute;
@@ -488,10 +527,10 @@
     }
 
     .imgrp {
-        left: -56px;
+        left: 0;
         max-width: 200px;
         bottom: -16px;
-        display: none;
+
     }
 
     .imgjs {
@@ -544,6 +583,12 @@
 
     .imgabout {
         display: block;
+        rotate: -5deg;
+        bottom: -96px;
+        right: 0;
+        z-index: 1;
+        max-width: 200px;
+        width: 100%;
     }
 
     .imgsleep {
@@ -552,6 +597,9 @@
 
     .imgplant {
         display: block;
+        max-width: 160px;
+        width: 100%;
+        top: 76%;
     }
 
     .bg_white {
@@ -626,9 +674,16 @@
         top: -7%;
         display: block;
     }
-        .imgls{
-            display: block;
-        }
+
+    .imgls {
+        display: block;
+    }
+
+    .imggif {
+        max-width: 446px;
+        max-height: 497px;
+        width: 100%;
+    }
 }
 
 @media (min-width:1023px) {
@@ -690,6 +745,22 @@
         bottom: -50px;
     }
 
+    .imgplant {
+        display: block;
+        max-width: 200px;
+        width: 100%;
+        top: 72%;
+    }
+
+    .imgabout {
+        rotate: -5deg;
+        bottom: -104px;
+        right: 0;
+        z-index: 1;
+        max-width: 268px;
+        width: 100%;
+    }
+
     .imggrp {
         top: -10px;
         left: 12px;
@@ -699,6 +770,12 @@
 }
 
 @media (min-width:1367px) {
+    .imgplant {
+        display: block;
+        max-width: 200px;
+        width: 100%;
+        top: 74%;
+    }
 
     .imglp {
         position: absolute;
@@ -706,6 +783,15 @@
         max-width: unset;
         bottom: 5px;
         z-index: 1;
+    }
+
+    .imgabout {
+        rotate: -5deg;
+        bottom: -124px;
+        right: 0;
+        z-index: 1;
+        max-width: 268px;
+        width: 100%;
     }
 
     .imgpath {
@@ -749,14 +835,17 @@
         width: 100%;
         transform: translate(38px, -90px);
     }
-    .imggif{
+
+    .imggif {
         min-width: 446px;
+        min-height: 497px;
+        width: 100%;
     }
 }
 
 @media (min-width:1400px) {
     .custom_container {
-        max-width: 1140px;
+        max-width: 1140px !important;
     }
 
     .imgpath {
@@ -820,6 +909,14 @@
     .imgjs {
         bottom: -70px;
     }
+
+    .imgplant {
+        top: 80%;
+    }
+
+    .imgabout {
+        bottom: -164px;
+    }
 }
 
 
@@ -866,7 +963,7 @@
     }
 
     label[for="checkbox"]>span {
-        height: 6px;
+        height: 5px;
         width: 38px;
         border-radius: 40px;
         background-color: #ffffff !important;

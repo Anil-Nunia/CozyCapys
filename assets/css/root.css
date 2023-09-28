@@ -125,7 +125,7 @@
             --fs-lg: 43.22px;
             --fs-xl: 60px;
             --fs-xls: 69.762px;
-            --fs-xxl: 50px;
+            --fs-xxl: 44px;
         }
 }
 
@@ -149,7 +149,7 @@
     :root {
             --fs-xsm: 14px;
             --fs-sm: 16px;
-            --fs-md: 14px;
+            --fs-md: 18px;
             --fs-mds: 20px;
             --fs-md1s: 22px;
             --fs-md2s: 28px;
